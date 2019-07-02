@@ -537,15 +537,19 @@
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+
     <!-- Smart Chagring -->
     <bool name="config_smartChargingAvailable">true</bool>
+
     <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and app standby.  These are not enabled by default because they require a standard cloud-to-device messaging service for apps to interact correctly with the modes (such as to be able to deliver an instant message to the device even when it is dozing).  This should be enabled if you have such services and expect apps to correctly use them when installed on your device.  Otherwise, keep this disabled so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
     
     <!-- Whether device has a physical display cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
+
 </resources>

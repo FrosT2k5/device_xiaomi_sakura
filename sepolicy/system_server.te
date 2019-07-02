@@ -1,3 +1,4 @@
+
 allow system_server proc_touchpanel:dir search;
 allow system_server proc_touchpanel:file rw_file_perms;
 
@@ -8,3 +9,7 @@ allow system_server sysfs_rtc:file r_file_perms;
 
 # fingerprint
 allow system_server goodix_fp_hwservice:hwservice_manager find;
+
+# Smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+

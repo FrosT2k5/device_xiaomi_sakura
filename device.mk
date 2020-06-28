@@ -292,6 +292,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include device/xiaomi/sakura/prop.mk
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson

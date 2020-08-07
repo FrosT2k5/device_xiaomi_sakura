@@ -28,6 +28,5 @@
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
->>>>>>> 6bfaee4a... ginkgo: Add FPSinfo overlay
 </resources>
 

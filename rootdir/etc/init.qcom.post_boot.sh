@@ -4360,21 +4360,33 @@ echo 3600 > /proc/sys/vm/stat_interval
 #Misc changes
 sysctl -w net.ipv4.tcp_congestion_control=westwood
 
-#Uclamp-related changes
+#Uclamp changes (reduces jitter,apparently)
+
+#system-wide
 sysctl -w kernel.sched_rt_default_util_clamp_min=500
 sysctl -w kernel.sched_util_clamp_min=128
 
+#top-app
 echo max > /dev/cpuset/top-app/uclamp.max
-echo 50 > /dev/cpuset/top-app/uclamp.min
+echo 85 > /dev/cpuset/top-app/uclamp.min
 echo 1   > /dev/cpuset/top-app/uclamp.latency_sensitive 
 
-echo 90 > /dev/cpuset/background/uclamp.max
-echo 40 > /dev/cpuset/background/uclamp.min
-echo 0  > /dev/cpuset/background/uclamp.latency_sensitive
-
-echo 40 > /dev/cpuset/foreground/uclamp.max
-echo 0 > /dev/cpuset/foreground/uclamp.min
+#foreground
+echo 50 > /dev/cpuset/foreground/uclamp.max
+echo 20 > /dev/cpuset/foreground/uclamp.min
 echo 1  > /dev/cpuset/foreground/uclamp.latency_sensitive
 
-echo 30 > /dev/cpuset/system-background/uclamp.max
+#background
+echo max > /dev/cpuset/background/uclamp.max
+echo 20 > /dev/cpuset/background/uclamp.min
+echo 0  > /dev/cpuset/background/uclamp.latency_sensitive
+
+#system-background
+echo 50 > /dev/cpuset/system-background/uclamp.max
+echo 10 > /dev/cpuset/system-background/uclamp.min
+echo 0  > /dev/cpuset/system-background/uclamp.latency_sensitive
+
+#camera-daemon
 echo 20 > /dev/cpuset/camera-daemon/uclamp.max
+echo 0 > /dev/cpuset/camera-daemon/uclamp.min
+echo 0  > /dev/cpuset/camera-daemon/uclamp.latency_sensitive

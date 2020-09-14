@@ -1,0 +1,26 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "DerpFest-Devices/device_xiaomi_sakura",
+        "target_path":  "device/xiaomi/sakura",
+        "revision":     "derpten"
+    },
+    {
+        "remote":       "github",
+        "repository":   "mahajant99/vendor_xiaomi_sakura",
+        "target_path":  "vendor/xiaomi",
+        "revision":     "lineage-17.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "darkhz/revvz_sakura",
+        "target_path":  "kernel/xiaomi/msm8953",
+        "revision":     "beta-4.9-Q"
+    }
+    {
+        "remote":       "github",
+        "repository":   "mahajant99/vendor_MiuiCamera",
+        "target_path":  "vendor/MiuiCamera",
+        "revision":     "master"
+    }
+]

@@ -209,6 +209,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwifi-hal-ctrl
 
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor \
+    libhidltransport \
+    libhidltransport.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \

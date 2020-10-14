@@ -167,9 +167,11 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 #Vintf
-
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.ims.callinfo@1.0-service.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.esepowermanager@1.0-service.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/power/android.hardware.power@1.0-service.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/liblight/android.hardware.light@2.0-service.xml
+
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456

@@ -4390,3 +4390,6 @@ echo 0  > /dev/cpuset/system-background/uclamp.latency_sensitive
 echo 20 > /dev/cpuset/camera-daemon/uclamp.max
 echo 0 > /dev/cpuset/camera-daemon/uclamp.min
 echo 0  > /dev/cpuset/camera-daemon/uclamp.latency_sensitive
+
+#SELINUX
+echo 2 > /sys/fs/selinux/enforce

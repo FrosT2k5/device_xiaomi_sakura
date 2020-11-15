@@ -65,3 +65,6 @@
 
 # Root folders
 /firmware(/.*)?          u:object_r:firmware_file:s0
+
+#FPS info
+/sys/class/graphics/fb0/measured_fps               u:object_r:sysfs_fps:s0

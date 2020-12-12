@@ -8,3 +8,7 @@ allow system_server sysfs_rtc:file r_file_perms;
 
 # fingerprint
 allow system_server goodix_fp_hwservice:hwservice_manager find;
+
+# camera
+allow system_server mm-qcamerad:binder { call };
+get_prop(system_server, camera_prop)

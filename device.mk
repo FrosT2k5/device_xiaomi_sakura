@@ -176,6 +176,9 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
+    vendor.display.config@1.0 \
     liboverlay \
     libqdMetaData.system \
     libgenlock \

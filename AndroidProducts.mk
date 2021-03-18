@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_sakura.mk
+    $(LOCAL_DIR)/yaap_sakura.mk

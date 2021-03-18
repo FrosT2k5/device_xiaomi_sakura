@@ -18,15 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from mido device
+# Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Yaap stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := derp_sakura
+PRODUCT_NAME := yaap_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -41,7 +41,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
-TARGET_BOOT_ANIMATION_RES += 1080
+scr_resolution := 1080
 
-#Official
-DERP_BUILDTYPE := Official

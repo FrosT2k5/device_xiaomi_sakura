@@ -371,9 +371,7 @@ PRODUCT_BOOT_JARS += \
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \

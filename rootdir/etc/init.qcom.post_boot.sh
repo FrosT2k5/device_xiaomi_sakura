@@ -4407,7 +4407,7 @@ write /proc/sys/vm/page-cluster 0
 write /proc/sys/vm/stat_interval 10
 
 # Swap to the swap device at a fair rate
-write /proc/sys/vm/swappiness 100
+write /proc/sys/vm/swappiness 60
 
 # Prioritize page cache over simple file structure nodes
 write /proc/sys/vm/vfs_cache_pressure 200

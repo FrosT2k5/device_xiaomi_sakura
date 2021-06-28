@@ -44,4 +44,4 @@ BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/
 # Xtended Stuff
 XTENDED_BUILD_MAINTAINER := Yash Patil(FrosT2k5)
 TARGET_BOOT_ANIMATION_RES += 1080
-
+WITH_GMS := true

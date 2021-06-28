@@ -2,4 +2,10 @@
     <!-- Device specific doze package -->
     <string 
 name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
+  <!-- Disable Battery Health -->
+  <bool name="config_supportBatteryHealth">false</bool>
+
+  <!-- Disable Smart Charging -->
+  <bool name="config_smartChargingAvailable">false</bool>
 </resources>

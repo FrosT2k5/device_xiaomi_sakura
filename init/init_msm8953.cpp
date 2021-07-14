@@ -139,4 +139,8 @@ void load_dalvik_properties()
 void vendor_load_properties()
 {
 	load_dalvik_properties();
+
+	// fingerprint
+	property_override("ro.build.fingerprint","google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+	
 }

@@ -212,6 +212,11 @@ persist.vendor.cne.logging.qxdm=3974
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
 
+# Soc
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.soc.manufacturer=QTI \
+ro.soc.model=MSM8953
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \

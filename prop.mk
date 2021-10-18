@@ -208,6 +208,10 @@ persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.binary_xml=false
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \

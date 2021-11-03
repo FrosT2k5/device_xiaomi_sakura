@@ -24,6 +24,10 @@ allow hal_fingerprint_default gx_fpd_data_file:dir create_dir_perms;
 allow hal_fingerprint_default system_data_file:dir create_dir_perms;
 allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
 
+allow hal_fingerprint_default system_prop:file { getattr open read };
+allow hal_fingerprint_default system_prop:property_service set;
+allow hal_fingerprint_default vendor_system_prop:property_service set;
+
 allow hal_fingerprint_default media_rw_data_file:dir r_dir_perms;
 r_dir_file(hal_fingerprint_default, mnt_user_file)
 r_dir_file(hal_fingerprint_default, storage_file)

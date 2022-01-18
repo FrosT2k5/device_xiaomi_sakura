@@ -500,3 +500,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages

@@ -24,4 +24,11 @@
 
      <!-- QS tile title -->
     <string name="camera_qs_tile_title">Camera HAL</string>
+
+    <!-- Temporarily add the strings to build without error -->
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_on">On</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_off">Off</string>
 </resources>

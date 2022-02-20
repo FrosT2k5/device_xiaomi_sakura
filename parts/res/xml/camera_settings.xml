@@ -25,4 +25,7 @@
         android:summary="%s"
         android:icon="@drawable/ic_cam" />
 
+    <Preference
+        android:selectable="false"
+        android:summary="@string/camera_info" />
 </PreferenceScreen>

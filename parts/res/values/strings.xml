@@ -17,6 +17,7 @@
 <resources>
    <!-- HAL3 | HAL1 Switch button profiles -->
     <string name="camera_title">Camera HAL Switch</string>
+    <string name="camera_info">Note: Enable cam2api only when using GCAM, since it causes issues with other camera apps. It is recommended to keep this off when not using gcam.</string>
     <string name="camera_pref_title">Choose a HAL</string>
     <string name="camera_summary">Change camera HAL</string>
     <string name="camera_hal1_summary">Cam2api OFF</string>

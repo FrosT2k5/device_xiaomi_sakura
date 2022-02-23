@@ -95,6 +95,7 @@ debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
+media.wfd.max_resolution=5 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
@@ -241,3 +242,9 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 #Blur
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.sf.disable_blurs=1
+
+
+#Wfd
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.debug.wfd.enable=1 \
+media.wfd.max_resolution=5

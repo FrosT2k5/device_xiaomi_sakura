@@ -209,7 +209,7 @@ persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
 # System
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 persist.sys.binary_xml=false
 
 # Soc
